@@ -153,9 +153,9 @@ def index_page(browser,page):
     try:
         if page > 1 :
             index = (page - 1) * 25
-            url  = "https://www.linkedin.com/jobs/search/?geoId=104187078&location=Taiwan" + "&start=" + index
+            url  = "https://www.linkedin.com/jobs/search/?" + "&start=" + index
         else:
-            url = "https://www.linkedin.com/jobs/search/?geoId=104187078&location=Taiwan"
+            url = "https://www.linkedin.com/jobs/search/?"
         browser.get(url)
 
         wait = WebDriverWait(browser,10)
